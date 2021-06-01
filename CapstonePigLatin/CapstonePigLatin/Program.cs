@@ -43,22 +43,24 @@ namespace CapstonePigLatin
                     {
                         System.Environment.Exit(1);
                     }
-                }  
-            }
                 }
-
-            static bool IsConsonant(char letter)
-            {
-            const String vowels = "AEIOUaeiou";
-
-            if (vowels.Contains(letter))
-                { return false; }
-                //else
-                //{
-                    return true;
-                }
-
             }
         }
+
+        static bool IsConsonant(char letter)
+        {
+
+            char[] Vowels = { 'A', 'E', 'I', 'O', 'U' };
+
+            if (Vowels.Contains(letter))
+            { return false; }
+            else
+            {
+                return true;
+            }
+
+        }
+    }
+}
     
 
